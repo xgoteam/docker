@@ -1,0 +1,6 @@
+version: '3'
+services:
+  php_7_2_10_1-fpm-centos7:
+      build: ./
+      container_name: php_7_2_10_1-fpm-centos7
+      restart: always

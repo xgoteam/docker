@@ -1,0 +1,7 @@
+version: '3'
+services:
+  node-webpack-11.x.2-centos7:
+      build: ./
+      container_name: node-webpack_11_x_2-centos7
+      volumes:
+        - ~/Work:/data1
