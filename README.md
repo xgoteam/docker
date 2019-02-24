@@ -28,5 +28,19 @@ https://cloud.docker.com/u/xgoteam/repository/list
 ```
 
 
+# 构建并推送镜像
 
+```bash
+
+./push.sh fpm/7.2.10-centos7
+
+```
+
+推送后，可从docker hub拉取该镜像
+
+```bash
+
+docker pull xgoteam/fpm:7.2.10.2-centos7
+
+```
 

@@ -3,4 +3,4 @@
 path=$1
 img_full_name=${path////:}
 
-docker build ./${path} -t hiiilife/${img_full_name}
+docker build ./${path} -t xgoteam/${img_full_name}

@@ -5,4 +5,4 @@ img_full_name=${path////:}
 
 ./build.sh ${path}
 
-docker push hiiilife/${img_full_name}
+docker push xgoteam/${img_full_name}
