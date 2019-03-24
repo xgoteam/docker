@@ -1,0 +1,6 @@
+version: '3'
+services:
+  fpm:
+      build: ./
+      container_name: fpm
+      restart: always
