@@ -12,8 +12,8 @@ RUN yum clean all; \
 	wget -O go.tgz "https://dl.google.com/go/go$GOLANG_VERSION.linux-amd64.tar.gz"; \
 	tar -C /usr/local -xzf go.tgz; \
     rm -rf /tmp/*
-
+	
 RUN go version; \
-	mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH"
+	mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH";
 
 WORKDIR $GOPATH
