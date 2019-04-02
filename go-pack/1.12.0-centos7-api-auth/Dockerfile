@@ -1,5 +1,5 @@
 FROM xgoteam/go:1.12.0-centos7
-COPY src /app/src
+COPY src /pack/src
 ENV GO111MODULE on
-RUN cd /app/src; \
+RUN cd /pack/src; \
     go mod tidy
