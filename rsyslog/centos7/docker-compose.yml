@@ -1,0 +1,13 @@
+version: '3.5'
+services:
+  rsyslog:
+      build: ./
+      container_name: rsyslog
+      restart: always
+      privileged: true
+      networks:
+        - xgo-com
+
+networks:
+  xgo-com:
+    name: xgo-com

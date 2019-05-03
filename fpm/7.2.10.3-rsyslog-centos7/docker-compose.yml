@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  fpm:
+      build: ./
+      container_name: fpm
+      restart: always
+      privileged: true
+      volumes:
+        - ~/Work:/data1
+      networks:
+        - xgo-com
+
+networks:
+  xgo-com:
+    name: xgo-com

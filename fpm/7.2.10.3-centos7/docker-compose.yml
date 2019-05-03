@@ -4,3 +4,4 @@ services:
       build: ./
       container_name: fpm
       restart: always
+      privileged: true

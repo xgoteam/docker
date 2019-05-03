@@ -3,3 +3,5 @@ services:
   go:
       build: ./
       container_name: go
+      volumes:
+        - ~/Work/go:/app
