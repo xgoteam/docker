@@ -7,6 +7,9 @@ COPY etc/php.ini /usr/local/php/lib/php.ini
 COPY etc/rsyslog.conf /etc/rsyslog.conf
 COPY etc/rsyslog.d /etc/rsyslog.d
 COPY start.sh /start.sh
-RUN  chmod +x /start.sh;
+COPY entrypoint.sh /entrypoint.sh
+RUN  chmod +x /start.sh; \
+     chmod +x /entrypoint.sh
 
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/start.sh"]
