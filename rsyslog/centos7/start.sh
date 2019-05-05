@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/sbin/rsyslogd -dn
+/usr/sbin/rsyslogd -n
