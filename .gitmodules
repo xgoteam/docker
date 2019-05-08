@@ -1,0 +1,3 @@
+[submodule "openresty_dockerfile"]
+	path = openresty_dockerfile
+	url = https://github.com/mmfei/openresty_dockerfile
