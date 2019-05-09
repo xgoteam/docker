@@ -6,8 +6,9 @@ services:
       restart: always
       privileged: true
       networks:
-        - xgo-com
-
+        xgo-com:
+          aliases:
+          - nginx-rsyslog
 networks:
   xgo-com:
     name: xgo-com
