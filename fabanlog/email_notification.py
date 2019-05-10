@@ -44,6 +44,9 @@ def send_email(project_name, tag):
     email_title = f'发版 {project_name}'
 
     for name,email in email_list:
+        if 'hiii-life.com' in email:
+            email = email.replace('hiii-life.com', 'xgo.one')
+
         email_msg = f'''
 Dear {name}：<br>
     项目 {project_name} 在 {at_datetime} 进行了发版操作。<br>
@@ -52,11 +55,11 @@ Dear {name}：<br>
     tag: {tag}<br>
     tag内容: {tag_msg}
 '''
-        print(email_title)
-        print(email)
-        print(email_msg)
-        print('*'*30)
-        # send(email_msg, email_title, email)
+        # print(email_title)
+        # print(email)
+        # print(email_msg)
+        # print('*'*30)
+        send(email_msg, email_title, email)
 
 if __name__ == '__main__':
     project_name, tag = sys.argv[1:3]
