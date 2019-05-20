@@ -24,11 +24,6 @@ RUN pip3.6 install pipenv
 # pip upgrade
 RUN pip3.6 install --upgrade pip
 
-# supervisor installation
-RUN pip3.6 install supervisor
-
-RUN mkdir -p /etc/supervisord.d/
-ADD etc/supervisord.conf /etc/supervisord.conf
 ADD etc/rsyslog.conf /etc/rsyslog.conf
 
 RUN python3.6 --version
