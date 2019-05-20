@@ -28,3 +28,5 @@ ADD etc/rsyslog.conf /etc/rsyslog.conf
 RUN python3.6 --version
 RUN pipenv --version
 RUN pip3.6 --version
+
+CMD start.sh
