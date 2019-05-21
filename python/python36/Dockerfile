@@ -29,4 +29,6 @@ RUN python3.6 --version
 RUN pipenv --version
 RUN pip3.6 --version
 
-CMD start.sh
+RUN mkdir /work
+COPY start.sh /work/start.sh
+CMD /work/start.sh
