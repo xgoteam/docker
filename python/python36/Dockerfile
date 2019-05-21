@@ -13,7 +13,8 @@ RUN yum update -y
 RUN yum install -y epel-release \
     && yum install -y https://centos7.iuscommunity.org/ius-release.rpm \
     && yum install -y python36u python36u-libs python36u-devel python36u-pip \
-    && yum install -y rsyslog
+    && yum install -y rsyslog \
+    && yum install -y git
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
