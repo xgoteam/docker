@@ -32,5 +32,9 @@ RUN pipenv --version
 RUN pip3.6 --version
 
 RUN mkdir /work
+
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+
 COPY start.sh /work/start.sh
 CMD /work/start.sh
