@@ -1,0 +1,1 @@
+Spark2.2 base image
