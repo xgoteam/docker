@@ -1,6 +1,5 @@
 # 构建命令例子（正式环境） - docker build --no-cache --build-arg BUILD_ENV=city .
-# 临时基础镜像
-FROM jamiextsang/nuxt-oss-node8
+FROM xgoteam/node-nuxt:1.0.0-nuxt-oss-node8
 LABEL maintainer="junming.zeng@xgo.one"
 
 # 定义构建环境
