@@ -1,0 +1,5 @@
+version: '3'
+services:
+  vscode:
+      build: ./
+      container_name: vscode

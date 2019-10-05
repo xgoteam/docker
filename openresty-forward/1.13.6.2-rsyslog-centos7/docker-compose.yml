@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  nginx:
+      build: ./
+      container_name: nginx
+      restart: always
+      privileged: true
+      ports:
+        - "8011:80"
+      networks:
+        - xgo-com
+
+networks:
+  xgo-com:
+    name: xgo-com

@@ -16,4 +16,4 @@ RUN yum clean all; \
 RUN go version; \
 	mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 777 "$GOPATH";
 
-WORKDIR $GOPATH
+WORKDIR $GOPATH/src
