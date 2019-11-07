@@ -33,6 +33,8 @@ RUN ldconfig
 
 COPY etc/php-fpm.conf /usr/local/php/etc/php-fpm.conf
 COPY etc/php.ini /usr/local/php/lib/php.ini
+COPY etc/rsyslog.conf /etc/rsyslog.conf
+COPY etc/rsyslog.d /etc/rsyslog.d
 COPY start.sh /start.sh
 COPY entrypoint.sh /entrypoint.sh
 RUN  chmod +x /start.sh; \
