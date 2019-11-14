@@ -8,7 +8,7 @@ local DEBUG_MOD		= false  				--调试模式开关, 开启将不上报CAT 只记
 local DM_print_msg	= DEBUG_MOD and true	--调试模式下, 开启打印所有收到的消息.
 
 local php_cat_ip_list = {
-	{ip="cat", port=2280}
+	{ip="cat-proxy.cat.svc.cluster.local", port=2280}
 }
 -----------------------------------------------------------------------
 local log = require("log")

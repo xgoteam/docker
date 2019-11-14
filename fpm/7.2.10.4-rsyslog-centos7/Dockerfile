@@ -1,5 +1,6 @@
 FROM xgoteam/fpm:7.2.10.3-rsyslog-centos7
 
+RUN (yum install -y lua-devel cmake gcc-c++.x86_64)
 #Install luasocket
 RUN (git clone https://github.com/diegonehab/luasocket.git && cd luasocket && \
      make clean && make all && make install && cd ..)
@@ -33,8 +34,6 @@ RUN ldconfig
 
 COPY etc/php-fpm.conf /usr/local/php/etc/php-fpm.conf
 COPY etc/php.ini /usr/local/php/lib/php.ini
-COPY etc/rsyslog.conf /etc/rsyslog.conf
-COPY etc/rsyslog.d /etc/rsyslog.d
 COPY start.sh /start.sh
 COPY entrypoint.sh /entrypoint.sh
 RUN  chmod +x /start.sh; \
