@@ -1,6 +1,6 @@
 local _M = {}
 
-_M.repoter_url = "http://monitor.service.kgidc.cn/request_monitor"
+_M.repoter_url = ""
 _M.sum_table = { }
 _M.data_type = {
    mysql = 1,
