@@ -1,0 +1,250 @@
+start_loop
+{"start":true,"request":1, "domain":"172.17.10.181", "url":"/php-cli","time_sec":1459844963,"time_usec":261482,"rid":"172.17.10.181-ac110ab5-405512-123","mid":"172.17.10.181-ac110ab5-405512-123","pid":"172.17.10.181-ac110ab5-405512-123","host_name":"172_17_10_181","ip":"172.17.10.181"}
+
+cjson.encode
+{"mid":"172.17.10.181-ac110ab5-405512-123","pid":"172.17.10.181-ac110ab5-405512-123","domain":"172.17.10.181","time_usec":261482,"ip":"172.17.10.181","rid":"172.17.10.181-ac110ab5-405512-123","host_name":"172_17_10_181","start":true,"url":"\/php-cli","request":1,"time_sec":1459844963}
+{"call_start_time_sec":1459844963,"call_start_time_usec":261832, "request_id":1,"fname":"connect","cname":"Memcache","arg0":"3132372e302e302e31","arg1":"3131323131","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459844963,"call_end_time_usec":261965}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459844963,"fname":"connect","call_end_time_usec":261965,"request_id":1,"arg1":"11211","arg0":"127.0.0.1","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":261832}
+{"call_start_time_sec":1459844963,"call_start_time_usec":261981, "request_id":1,"fname":"set","cname":"Memcache","arg0":"6b657931","arg1":"546869732069732066697273742076616c7565","arg2":"30","arg3":"3630","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459844963,"call_end_time_usec":262134}
+cjson.encode
+{"arg2":"0","return":true,"cname":"Memcache","arg3":"60","call_start_time_sec":1459844963,"fname":"set","call_end_time_usec":262134,"request_id":1,"arg1":"This is first value","arg0":"key1","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":261981}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262147, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":"546869732069732066697273742076616c7565", "call_end_time_sec":1459844963,"call_end_time_usec":262264}
+cjson.encode
+{"return":"This is first value","cname":"Memcache","call_start_time_sec":1459844963,"fname":"get","call_end_time_usec":262264,"request_id":1,"arg0":"key1","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262147}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262290, "request_id":1,"fname":"replace","cname":"Memcache","arg0":"6b657931","arg1":"54686973206973207265706c6163652076616c7565","arg2":"30","arg3":"3630","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459844963,"call_end_time_usec":262379}
+cjson.encode
+{"arg2":"0","return":true,"cname":"Memcache","arg3":"60","call_start_time_sec":1459844963,"fname":"replace","call_end_time_usec":262379,"request_id":1,"arg1":"This is replace value","arg0":"key1","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262290}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262388, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":"54686973206973207265706c6163652076616c7565", "call_end_time_sec":1459844963,"call_end_time_usec":262473}
+cjson.encode
+{"return":"This is replace value","cname":"Memcache","call_start_time_sec":1459844963,"fname":"get","call_end_time_usec":262473,"request_id":1,"arg0":"key1","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262388}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262488, "request_id":1,"fname":"set","cname":"Memcache","arg0":"6b657932","arg1":{"30":"616161","31":"626262","32":"636363","33":"646464"},"arg2":"30","arg3":"3630","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459844963,"call_end_time_usec":262565}
+cjson.encode
+{"arg2":"0","return":true,"cname":"Memcache","arg3":"60","call_start_time_sec":1459844963,"fname":"set","call_end_time_usec":262565,"request_id":1,"arg1":{"1":"bbb","0":"aaa","3":"ddd","2":"ccc"},"arg0":"key2","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262488}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262576, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657932","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":{"30":"616161","31":"626262","32":"636363","33":"646464"}, "call_end_time_sec":1459844963,"call_end_time_usec":262662}
+cjson.encode
+{"return":{"1":"bbb","0":"aaa","3":"ddd","2":"ccc"},"cname":"Memcache","call_start_time_sec":1459844963,"fname":"get","call_end_time_usec":262662,"request_id":1,"arg0":"key2","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262576}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262714, "request_id":1,"fname":"delete","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459844963,"call_end_time_usec":262829}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459844963,"fname":"delete","call_end_time_usec":262829,"request_id":1,"arg0":"key1","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262714}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262839, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":false, "call_end_time_sec":1459844963,"call_end_time_usec":262903}
+cjson.encode
+{"return":false,"cname":"Memcache","call_start_time_sec":1459844963,"fname":"get","call_end_time_usec":262903,"request_id":1,"arg0":"key1","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262839}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262924, "request_id":1,"fname":"flush","cname":"Memcache","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459844963,"call_end_time_usec":262949}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459844963,"fname":"flush","call_end_time_usec":262949,"request_id":1,"call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262924}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262956, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657932","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":false, "call_end_time_sec":1459844963,"call_end_time_usec":262974}
+cjson.encode
+{"return":false,"cname":"Memcache","call_start_time_sec":1459844963,"fname":"get","call_end_time_usec":262974,"request_id":1,"arg0":"key2","call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262956}
+{"call_start_time_sec":1459844963,"call_start_time_usec":262989, "request_id":1,"fname":"close","cname":"Memcache","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459844963,"call_end_time_usec":263010}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459844963,"fname":"close","call_end_time_usec":263010,"request_id":1,"call_end_time_sec":1459844963,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":262989}
+{"end":true,"request":1, "code":0, "time_sec":1459844963, "time_usec":263030, "url":"/php-cli"}
+
+cjson.encode
+{"code":0,"end":true,"request":1,"url":"\/php-cli","time_sec":1459844963,"time_usec":263030}
+start_process_request
+
+process memcache
+connect
+process memcache
+set
+log by lua_reporter.lua
+/lua/process/memcache.lua:63: attempt to call global 'tonstring' (a nil value)
+reporter to server
+server_id
+0
+table: 0x7f6d4c028470
+type
+memcache
+table: 0x7f6d4c0284f0
+resourcename
+127.0.0.111211
+table: 0x7f6d4c028570
+before_encode
+table: 0x7f6d4c0036f0
+http://monitor.service.kgidc.cn/request_monitor
+{"detail":{"cmd_count":{},"slow_query":[""],"error_code_count":{},"hit_count":0,"cmd_fail_cout":{},"response_time":[0,0],"conn_time":[1,0],"err_query":[""],"resource_name":"127.0.0.111211"},"serverid":0,"data_type":3,"ip":"127.0.0.1"}
+nil
+No route to host
+end_loop
+start_loop
+{"start":true,"request":1, "domain":"172.17.10.181", "url":"/php-cli","time_sec":1459845139,"time_usec":116571,"rid":"172.17.10.181-ac110ab5-405512-123","mid":"172.17.10.181-ac110ab5-405512-123","pid":"172.17.10.181-ac110ab5-405512-123","host_name":"172_17_10_181","ip":"172.17.10.181"}
+
+cjson.encode
+{"mid":"172.17.10.181-ac110ab5-405512-123","pid":"172.17.10.181-ac110ab5-405512-123","domain":"172.17.10.181","time_usec":116571,"ip":"172.17.10.181","rid":"172.17.10.181-ac110ab5-405512-123","host_name":"172_17_10_181","start":true,"url":"\/php-cli","request":1,"time_sec":1459845139}
+{"call_start_time_sec":1459845139,"call_start_time_usec":116903, "request_id":1,"fname":"connect","cname":"Memcache","arg0":"3132372e302e302e31","arg1":"3131323131","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845139,"call_end_time_usec":117018}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459845139,"fname":"connect","call_end_time_usec":117018,"request_id":1,"arg1":"11211","arg0":"127.0.0.1","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":116903}
+{"call_start_time_sec":1459845139,"call_start_time_usec":117035, "request_id":1,"fname":"set","cname":"Memcache","arg0":"6b657931","arg1":"546869732069732066697273742076616c7565","arg2":"30","arg3":"3630","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845139,"call_end_time_usec":117179}
+cjson.encode
+{"arg2":"0","return":true,"cname":"Memcache","arg3":"60","call_start_time_sec":1459845139,"fname":"set","call_end_time_usec":117179,"request_id":1,"arg1":"This is first value","arg0":"key1","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":117035}
+{"call_start_time_sec":1459845139,"call_start_time_usec":117192, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":"546869732069732066697273742076616c7565", "call_end_time_sec":1459845139,"call_end_time_usec":117297}
+cjson.encode
+{"return":"This is first value","cname":"Memcache","call_start_time_sec":1459845139,"fname":"get","call_end_time_usec":117297,"request_id":1,"arg0":"key1","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":117192}
+{"call_start_time_sec":1459845139,"call_start_time_usec":117323, "request_id":1,"fname":"replace","cname":"Memcache","arg0":"6b657931","arg1":"54686973206973207265706c6163652076616c7565","arg2":"30","arg3":"3630","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845139,"call_end_time_usec":117426}
+cjson.encode
+{"arg2":"0","return":true,"cname":"Memcache","arg3":"60","call_start_time_sec":1459845139,"fname":"replace","call_end_time_usec":117426,"request_id":1,"arg1":"This is replace value","arg0":"key1","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":117323}
+{"call_start_time_sec":1459845139,"call_start_time_usec":117438, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":"54686973206973207265706c6163652076616c7565", "call_end_time_sec":1459845139,"call_end_time_usec":117536}
+cjson.encode
+{"return":"This is replace value","cname":"Memcache","call_start_time_sec":1459845139,"fname":"get","call_end_time_usec":117536,"request_id":1,"arg0":"key1","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":117438}
+{"call_start_time_sec":1459845139,"call_start_time_usec":117559, "request_id":1,"fname":"set","cname":"Memcache","arg0":"6b657932","arg1":{"30":"616161","31":"626262","32":"636363","33":"646464"},"arg2":"30","arg3":"3630","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845139,"call_end_time_usec":117682}
+cjson.encode
+{"arg2":"0","return":true,"cname":"Memcache","arg3":"60","call_start_time_sec":1459845139,"fname":"set","call_end_time_usec":117682,"request_id":1,"arg1":{"1":"bbb","0":"aaa","3":"ddd","2":"ccc"},"arg0":"key2","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":117559}
+{"call_start_time_sec":1459845139,"call_start_time_usec":117696, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657932","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":{"30":"616161","31":"626262","32":"636363","33":"646464"}, "call_end_time_sec":1459845139,"call_end_time_usec":117825}
+cjson.encode
+{"return":{"1":"bbb","0":"aaa","3":"ddd","2":"ccc"},"cname":"Memcache","call_start_time_sec":1459845139,"fname":"get","call_end_time_usec":117825,"request_id":1,"arg0":"key2","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":117696}
+{"call_start_time_sec":1459845139,"call_start_time_usec":117881, "request_id":1,"fname":"delete","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845139,"call_end_time_usec":118056}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459845139,"fname":"delete","call_end_time_usec":118056,"request_id":1,"arg0":"key1","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":117881}
+{"call_start_time_sec":1459845139,"call_start_time_usec":118074, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":false, "call_end_time_sec":1459845139,"call_end_time_usec":118172}
+cjson.encode
+{"return":false,"cname":"Memcache","call_start_time_sec":1459845139,"fname":"get","call_end_time_usec":118172,"request_id":1,"arg0":"key1","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":118074}
+{"call_start_time_sec":1459845139,"call_start_time_usec":118196, "request_id":1,"fname":"flush","cname":"Memcache","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845139,"call_end_time_usec":118255}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459845139,"fname":"flush","call_end_time_usec":118255,"request_id":1,"call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":118196}
+{"call_start_time_sec":1459845139,"call_start_time_usec":118261, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657932","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":false, "call_end_time_sec":1459845139,"call_end_time_usec":118294}
+cjson.encode
+{"return":false,"cname":"Memcache","call_start_time_sec":1459845139,"fname":"get","call_end_time_usec":118294,"request_id":1,"arg0":"key2","call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":118261}
+{"call_start_time_sec":1459845139,"call_start_time_usec":118307, "request_id":1,"fname":"close","cname":"Memcache","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845139,"call_end_time_usec":118325}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459845139,"fname":"close","call_end_time_usec":118325,"request_id":1,"call_end_time_sec":1459845139,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":118307}
+{"end":true,"request":1, "code":0, "time_sec":1459845139, "time_usec":118346, "url":"/php-cli"}
+
+cjson.encode
+{"code":0,"end":true,"request":1,"url":"\/php-cli","time_sec":1459845139,"time_usec":118346}
+start_process_request
+
+process
+connect
+process memcache
+connect
+process
+set
+process memcache
+set
+log by lua_reporter.lua
+/lua/process/memcache.lua:65: attempt to call global 'tonstring' (a nil value)
+reporter to server
+server_id
+0
+table: 0x7f6dc0021a50
+type
+memcache
+table: 0x7f6dc001cd60
+resourcename
+127.0.0.111211
+table: 0x7f6dc001cdb0
+before_encode
+table: 0x7f6dc00208c0
+http://monitor.service.kgidc.cn/request_monitor
+{"detail":{"cmd_count":{},"slow_query":[""],"error_code_count":{},"hit_count":0,"cmd_fail_cout":{},"response_time":[0,0],"conn_time":[1,0],"err_query":[""],"resource_name":"127.0.0.111211"},"serverid":0,"data_type":3,"ip":"127.0.0.1"}
+nil
+No route to host
+end_loop
+start_loop
+{"start":true,"request":1, "domain":"172.17.10.181", "url":"/php-cli","time_sec":1459845163,"time_usec":193463,"rid":"172.17.10.181-ac110ab5-405512-123","mid":"172.17.10.181-ac110ab5-405512-123","pid":"172.17.10.181-ac110ab5-405512-123","host_name":"172_17_10_181","ip":"172.17.10.181"}
+
+cjson.encode
+{"mid":"172.17.10.181-ac110ab5-405512-123","pid":"172.17.10.181-ac110ab5-405512-123","domain":"172.17.10.181","time_usec":193463,"ip":"172.17.10.181","rid":"172.17.10.181-ac110ab5-405512-123","host_name":"172_17_10_181","start":true,"url":"\/php-cli","request":1,"time_sec":1459845163}
+{"call_start_time_sec":1459845163,"call_start_time_usec":193794, "request_id":1,"fname":"connect","cname":"Memcache","arg0":"3132372e302e302e31","arg1":"3131323131","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845163,"call_end_time_usec":193928}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459845163,"fname":"connect","call_end_time_usec":193928,"request_id":1,"arg1":"11211","arg0":"127.0.0.1","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":193794}
+{"call_start_time_sec":1459845163,"call_start_time_usec":193945, "request_id":1,"fname":"set","cname":"Memcache","arg0":"6b657931","arg1":"546869732069732066697273742076616c7565","arg2":"30","arg3":"3630","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845163,"call_end_time_usec":194054}
+cjson.encode
+{"arg2":"0","return":true,"cname":"Memcache","arg3":"60","call_start_time_sec":1459845163,"fname":"set","call_end_time_usec":194054,"request_id":1,"arg1":"This is first value","arg0":"key1","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":193945}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194075, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":"546869732069732066697273742076616c7565", "call_end_time_sec":1459845163,"call_end_time_usec":194118}
+cjson.encode
+{"return":"This is first value","cname":"Memcache","call_start_time_sec":1459845163,"fname":"get","call_end_time_usec":194118,"request_id":1,"arg0":"key1","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194075}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194138, "request_id":1,"fname":"replace","cname":"Memcache","arg0":"6b657931","arg1":"54686973206973207265706c6163652076616c7565","arg2":"30","arg3":"3630","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845163,"call_end_time_usec":194168}
+cjson.encode
+{"arg2":"0","return":true,"cname":"Memcache","arg3":"60","call_start_time_sec":1459845163,"fname":"replace","call_end_time_usec":194168,"request_id":1,"arg1":"This is replace value","arg0":"key1","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194138}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194177, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":"54686973206973207265706c6163652076616c7565", "call_end_time_sec":1459845163,"call_end_time_usec":194198}
+cjson.encode
+{"return":"This is replace value","cname":"Memcache","call_start_time_sec":1459845163,"fname":"get","call_end_time_usec":194198,"request_id":1,"arg0":"key1","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194177}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194216, "request_id":1,"fname":"set","cname":"Memcache","arg0":"6b657932","arg1":{"30":"616161","31":"626262","32":"636363","33":"646464"},"arg2":"30","arg3":"3630","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845163,"call_end_time_usec":194254}
+cjson.encode
+{"arg2":"0","return":true,"cname":"Memcache","arg3":"60","call_start_time_sec":1459845163,"fname":"set","call_end_time_usec":194254,"request_id":1,"arg1":{"1":"bbb","0":"aaa","3":"ddd","2":"ccc"},"arg0":"key2","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194216}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194264, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657932","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":{"30":"616161","31":"626262","32":"636363","33":"646464"}, "call_end_time_sec":1459845163,"call_end_time_usec":194317}
+cjson.encode
+{"return":{"1":"bbb","0":"aaa","3":"ddd","2":"ccc"},"cname":"Memcache","call_start_time_sec":1459845163,"fname":"get","call_end_time_usec":194317,"request_id":1,"arg0":"key2","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194264}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194368, "request_id":1,"fname":"delete","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845163,"call_end_time_usec":194388}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459845163,"fname":"delete","call_end_time_usec":194388,"request_id":1,"arg0":"key1","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194368}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194394, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657931","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":false, "call_end_time_sec":1459845163,"call_end_time_usec":194409}
+cjson.encode
+{"return":false,"cname":"Memcache","call_start_time_sec":1459845163,"fname":"get","call_end_time_usec":194409,"request_id":1,"arg0":"key1","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194394}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194418, "request_id":1,"fname":"flush","cname":"Memcache","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845163,"call_end_time_usec":194433}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459845163,"fname":"flush","call_end_time_usec":194433,"request_id":1,"call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194418}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194438, "request_id":1,"fname":"get","cname":"Memcache","arg0":"6b657932","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":false, "call_end_time_sec":1459845163,"call_end_time_usec":194453}
+cjson.encode
+{"return":false,"cname":"Memcache","call_start_time_sec":1459845163,"fname":"get","call_end_time_usec":194453,"request_id":1,"arg0":"key2","call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194438}
+{"call_start_time_sec":1459845163,"call_start_time_usec":194464, "request_id":1,"fname":"close","cname":"Memcache","this":{"handle":1,"636f6e6e656374696f6e":{"resource_id": 5}},"return":true, "call_end_time_sec":1459845163,"call_end_time_usec":194486}
+cjson.encode
+{"return":true,"cname":"Memcache","call_start_time_sec":1459845163,"fname":"close","call_end_time_usec":194486,"request_id":1,"call_end_time_sec":1459845163,"this":{"handle":1,"connection":{"resource_id":5}},"call_start_time_usec":194464}
+{"end":true,"request":1, "code":0, "time_sec":1459845163, "time_usec":194502, "url":"/php-cli"}
+
+cjson.encode
+{"code":0,"end":true,"request":1,"url":"\/php-cli","time_sec":1459845163,"time_usec":194502}
+start_process_request
+
+process
+connect
+process memcache
+connect
+process
+set
+process memcache
+set
+process
+get
+process memcache
+get
+process
+replace
+process memcache
+replace
+process
+get
+process memcache
+get
+process
+set
+process memcache
+set
+process
+get
+process memcache
+get
+process
+delete
+process memcache
+delete
+process
+get
+process memcache
+get
+process
+get
+process memcache
+get
+end_process_request
+
+reporter to server
+server_id
+0
+table: 0x7f02a8021960
+type
+memcache
+table: 0x7f02a801d3e0
+resourcename
+127.0.0.111211
+table: 0x7f02a801d430
+before_encode
+table: 0x7f02a800cba0
+http://monitor.service.kgidc.cn/request_monitor
+{"detail":{"cmd_count":{"replace":1,"delete":1,"get":5,"set":2},"slow_query":[""],"error_code_count":{"1":2,"0":0},"hit_count":5,"cmd_fail_cout":{"replace":0,"delete":0,"get":2,"set":0},"response_time":[9,0],"conn_time":[1,0],"err_query":[""],"resource_name":"127.0.0.111211"},"serverid":0,"data_type":3,"ip":"127.0.0.1"}
+nil
+No route to host
+end_loop
