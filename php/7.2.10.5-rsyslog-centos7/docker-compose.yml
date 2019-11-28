@@ -1,0 +1,14 @@
+version: '3.5'
+services:
+  php:
+      build: ./
+      container_name: php
+      privileged: true
+      volumes:
+        - ~/Work:/data1
+      networks:
+        - xgo-com
+
+networks:
+  xgo-com:
+    name: xgo-com
