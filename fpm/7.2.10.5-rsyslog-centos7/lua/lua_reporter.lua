@@ -438,6 +438,7 @@ function process_pdo(ctx, p_i, request_context)
                 pdo_handle = ctx[i].this.handle
                 pdo_i = i
 				sql = ctx[i].arg0
+				break
             end
         end
 
