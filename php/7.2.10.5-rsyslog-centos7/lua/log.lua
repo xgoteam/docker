@@ -79,7 +79,7 @@ local function open_log_file()
 	end
 
 	--清除旧日志
-	clean_log_file()
+	--clean_log_file()
 
 end
 -----------------------------------------------------------------------------------
