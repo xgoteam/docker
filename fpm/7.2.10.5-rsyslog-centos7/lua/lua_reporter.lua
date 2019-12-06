@@ -108,6 +108,12 @@ fetch_msg in c {"call_start_time_sec":1458364655,"call_start_time_usec":180688, 
 			end
 		end
 	end
+
+	--针对GuzzleHttp和curl_init(url)拿取不到域名有的补救方法
+	if ctx[p_i+1] and ctx[p_i+1].fname=="curl_getinfo" then
+		url = ctx[p_i+1]["return"].url
+	end
+
 	return url
 end
 ----------------------------------------------------------------
