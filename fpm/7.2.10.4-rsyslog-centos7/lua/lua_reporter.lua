@@ -286,28 +286,7 @@ function process_curl(ctx, p_i, request_context)
 	
 	--url处理
 	local url = curl_fetch_url(ctx, p_i)
-	local urlArgsTable = {}
-    --rpc.php特殊处理
-    local findResult,e = string.find(url, "[rpc.php]")
-    if findResult then
-        local uriTable = parseUrlString(url)
-        if uriTable["api"] then
-            table.insert(urlArgsTable, "api="..uriTable["api"])
-        end
-        if uriTable["mtd"] then
-            table.insert(urlArgsTable, "mtd="..uriTable["mtd"])
-        end
-    end
-	local s,e = string.find(url, "?")
-	if s then
-		url = string.sub(url, 1, s-1)
-	end
-	if #urlArgsTable > 0 then
-        local urlArgsStr = table.concat(urlArgsTable, "&")
-        url = url.."?"..urlArgsStr
-    end
-
-	
+	url = string.gsub(url,"/%d+/","/{d}/")
 
 	--todo,replace \t \n, 防止与上报信息格式的token冲突
 	--param = string.gsub(param, "\t", "\\t")
