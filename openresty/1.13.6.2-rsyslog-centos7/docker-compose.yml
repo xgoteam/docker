@@ -5,11 +5,6 @@ services:
       container_name: nginx
       restart: always
       privileged: true
-      ports:
-        - "8011:80"
-      networks:
-        - xgo-com
-
 networks:
-  xgo-com:
+  default:
     name: xgo-com
