@@ -5,10 +5,18 @@ services:
       container_name: rsyslog
       restart: always
       privileged: true
-      networks:
-        xgo-com:
-          aliases:
-          - nginx-rsyslog
+  nginx-access-rsyslog:
+      build: ./
+      container_name: nginx-access-rsyslog
+      command: ["/usr/sbin/rsyslogd", "-dn"]
+      restart: always
+      privileged: true
+  nginx-error-rsyslog:
+      build: ./
+      container_name: nginx-error-rsyslog
+      command: ["/usr/sbin/rsyslogd", "-dn"]
+      restart: always
+      privileged: true
 networks:
-  xgo-com:
+  default:
     name: xgo-com
